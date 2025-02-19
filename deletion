@@ -1,0 +1,16 @@
+#include<stdio.h>
+void deletion(int arr[], int n)
+{
+    printf("You have chosen to delete from the 1D array.: \n");
+    int i,val,pos;
+    printf("Enter postion to delete: \n");
+    scanf("%d", &pos);
+
+    for(i = pos-1; i < n-1; i++)
+        arr[i] = arr[i + 1];
+    n--;
+
+    printf("Array after deletion: \n");
+    for (i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+}
